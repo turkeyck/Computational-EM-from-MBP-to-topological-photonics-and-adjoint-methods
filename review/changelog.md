@@ -202,10 +202,9 @@
 2. **Wang 2008（arXiv:0712.1776）**：$\varepsilon=15$、$r=0.11a$；1600 Gauss、4.28 GHz 下 $\kappa=12.4$、$\mu=14$；第 2、3 TM 能帶在 M 點有二次型簡併；能隙 10%，計入色散後「reduces to around 6%」；氧化鋁柱 $r=0.106a$、$\varepsilon=10$、轉 45°，所有能帶 Chern 數為零。✅ 全部一致。
 3. **Asbóth 等人（arXiv:1509.02295）**：第 2 章 Berry phase, Chern number；第 6 章 Two-dimensional Chern insulators – the Qi-Wu-Zhang model；$0<u<2$ 時 $Q=1$、$-2<u<0$ 時 $Q=-1$。✅ 已把正負號寫進第 3 講習題 2。
 
+4. **Tong〈Gauge Theory〉第 3 章**（使用者提供的 PDF）：3.1.1〈Massless Fermions in Two Dimensions〉、3.2.2〈The Anomaly lies in the Measure〉（Fujikawa 方法）、3.3.1〈The Atiyah-Singer Index Theorem〉；第 3.3.4 節寫明「anomaly inflow that will be described in Section 4.4.1」。式 (3.8) $\dot\rho_A=eE/\pi$ 與式 (3.2) 的 $e^2/16\pi^2$ 都與講義的 (5.1)、(5.3) 一致。✅ 第 5 講閱讀指引已改寫為確認後的節名。
+5. **S4**（github.com/victorliu/S4，`doc/source/python_api.rst`、`S4/main_python.c`）：Python 選項為 `PolarizationDecomposition`、`PolarizationBasis`（`'Default'` 為切向場、`'Normal'`、`'Jones'`）、`LanczosSmoothing`、`SubpixelSmoothing`、`DiscretizedEpsilon`、`LatticeTruncation`（預設 `'Circular'`）；Lua API 為 `UsePolarizationDecomposition`、`UseNormalVectorBasis`、`UseJonesVectorBasis`。✅ 原稿「S4 的 PolarizationDecomposition 選項即此類方法」正確；第 7.3 節已寫回確切名稱並補上各向異性的限制，第 8.3 節陷阱表補上 S4 的截斷選項。
+
 ## 仍未能確認的事項
 
-`web.stanford.edu`（S4 文件）與 `www.damtp.cam.ac.uk`（Tong 講義）經 proxy 連線時 TLS 憑證驗證失敗，因此以下各項仍待複核：
-
-1. Tong〈Gauge Theory〉的節號，特別是 anomaly inflow 的「4.4.1」。
-2. S4 中法向量場分解選項的確切名稱。
-3. 標 † 的新增文獻卷頁。
+- 標 † 的新增文獻卷頁（依標準書目資料補入，尚未逐一以線上頁面複核）。

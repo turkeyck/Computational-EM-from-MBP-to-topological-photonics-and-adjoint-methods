@@ -427,7 +427,7 @@ $$
 3. 在 1+1 維做 Fujikawa 計算：寫出手徵轉動下的 Jacobian，用熱核正規化求出異常項。
 4. 寫一篇筆記：用 300 字向工程師解釋「為什麼第 4 講的疇壁一定有邊緣模」，同時用到第 4 講與本講的語言。
 
-**閱讀順序**：David Tong《Gauge Theory》講義第 3 章〈Anomalies〉（主教材，免費；依查核來源，譜流在 3.1.1 節、Fujikawa 方法在 3.2.2 節、指標定理在 3.3.1 節）。anomaly inflow 原稿標為同講義 4.4.1 節，該節號尚未對照 PDF 確認，閱讀時請以目錄為準。之後讀 Callan & Harvey, Nucl. Phys. B 250, 427 (1985)；J. Harvey《TASI 2003 Lectures on Anomalies》（arXiv:hep-th/0509097）；Fujikawa & Suzuki《Path Integrals and Quantum Anomalies》（Oxford University Press, 2004；深入參考）；Nielsen & Ninomiya, Nucl. Phys. B 185, 20 (1981) 與 Nucl. Phys. B 193, 173 (1981)（費米子倍增 no-go 定理）；Nielsen & Ninomiya, Phys. Lett. B 130, 389 (1983)（晶體中的 ABJ 異常與 Weyl 費米子）。
+**閱讀順序**：David Tong《Gauge Theory》講義第 3 章〈Anomalies〉（主教材，免費）：3.1.1 節〈Massless Fermions in Two Dimensions〉（譜流，式 (3.8) 即本講 (5.1)）、3.2.2 節〈The Anomaly lies in the Measure〉（Fujikawa 方法）、3.3.1 節〈The Atiyah-Singer Index Theorem〉。anomaly inflow 在同講義 4.4.1 節（第 3 章 3.3.4 節的交叉引用）。之後讀 Callan & Harvey, Nucl. Phys. B 250, 427 (1985)；J. Harvey《TASI 2003 Lectures on Anomalies》（arXiv:hep-th/0509097）；Fujikawa & Suzuki《Path Integrals and Quantum Anomalies》（Oxford University Press, 2004；深入參考）；Nielsen & Ninomiya, Nucl. Phys. B 185, 20 (1981) 與 Nucl. Phys. B 193, 173 (1981)（費米子倍增 no-go 定理）；Nielsen & Ninomiya, Phys. Lett. B 130, 389 (1983)（晶體中的 ABJ 異常與 Weyl 費米子）。
 
 ## 第 6 講：RCWA I——一維光柵的傅立葉模態法
 
@@ -559,7 +559,7 @@ TM 的穿透效率需要把 $1/n^2$ 因子放進去：$\mathrm{DE}_{t,m}=|T_m|^2
 介電張量的處理依形狀而定：
 
 - **矩形柱**（Li, 1997）：對 $E_x$ 分量，介面法向是 $\hat x$，所以先沿 $x$ 方向用逆規則、再沿 $y$ 方向用 Laurent 規則組出二維卷積矩陣；對 $E_y$ 分量則把兩個方向對調。
-- **任意形狀（圓柱、斜邊）**：介面不再與座標軸對齊。要先在每一點定義介面的法向量場 $\hat{\mathbf n}(x,y)$，把 $\mathbf E$ 分解成法向分量（用逆規則）與切向分量（用 Laurent 規則）。這套「快速傅立葉因式分解」由 Popov & Nevière（2000）提出，Schuster 等人（2007）把它推廣到交叉光柵的 RCWA（法向量場法），Götz 等人（2008）給出自動產生向量場的方法。S4 也提供以這類分解建構介電張量的選項（詳見 S4 文件的 polarization decomposition 相關設定）。
+- **任意形狀（圓柱、斜邊）**：介面不再與座標軸對齊。要先在每一點定義介面的法向量場 $\hat{\mathbf n}(x,y)$，把 $\mathbf E$ 分解成法向分量（用逆規則）與切向分量（用 Laurent 規則）。這套「快速傅立葉因式分解」由 Popov & Nevière（2000）提出，Schuster 等人（2007）把它推廣到交叉光柵的 RCWA（法向量場法），Götz 等人（2008）給出自動產生向量場的方法。S4 的對應設定是 `PolarizationDecomposition=True`（Lua API 為 `UsePolarizationDecomposition`）。分解基底由 `PolarizationBasis` 選擇：`'Default'` 為平滑的切向向量場，`'Normal'` 為單位法向量場（即法向量場法），`'Jones'` 為複數 Jones 向量場。S4 文件註明，這個選項在介電張量各向異性時不保證有效。
 
 ### 習題
 
@@ -614,7 +614,7 @@ $$
 | 平方根分支選錯 | 衰減模被當成增長模，結果爆掉 | 統一取 $\operatorname{Im}k_z\ge0$；$\operatorname{Im}k_z=0$ 的傳播模取 $\operatorname{Re}k_z>0$ |
 | 均勻層的簡併本徵值 | 本徵向量任意混合，$\mathbf W$ 病態（2D 時兩個偏振尤其容易混在一起） | 均勻層直接用解析平面波，不呼叫本徵解法 |
 | Rayleigh anomaly 附近 $k_z\to0$ | 矩陣近奇異 | 輕微偏移波長，或加極小損耗做檢查 |
-| 截斷方式不一致 | 與參考程式在同一 $M$ 下對不上 | 比較收斂後的值，而非同一 $M$ 的值 |
+| 截斷方式不一致 | 與參考程式在同一 $M$ 下對不上 | 比較收斂後的值，而非同一 $M$ 的值；S4 預設 `LatticeTruncation='Circular'`（依 $|\mathbf G|$ 選取），另一選項 `'Parallelogramic'` 才是方形截斷 |
 | 顯式矩陣求反 | 精度損失 | 一律用 LU 分解求解 |
 | 時間慣例混用 | 反射與穿透方向對調、損耗變增益 | 全程使用同一套慣例（見「全書符號與慣例」） |
 

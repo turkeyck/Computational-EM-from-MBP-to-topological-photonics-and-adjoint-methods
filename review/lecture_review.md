@@ -173,7 +173,7 @@ Ho–Chan–Soukoulis PRL 65, 3152 (1990)；Sözüer–Haus–Inguva PRB 45, 139
 | L572、L665 | Taflove & Hagness 沒有寫版次 | 第 3 版（Artech House, 2005） |
 | L607 | 拓撲最佳化的濾波與投影沒有出處 | Wang–Lazarov–Sigmund (2011)；Bourdin, IJNME 50, 2143 (2001) |
 | L598 | 「grcwa 與 TORCWA 分別示範了…Lorentzian 展寬」 | Lorentzian 展寬出自 TORCWA 論文；grcwa 是用 autograd 自動微分。建議分開寫清楚 |
-| L308 | Tong〈Gauge Theory〉「4.4.1 節 anomaly inflow」 | 查核來源只列了第 3 章 PDF；第 4 章（Lattice Gauge Theory）的節號沒有列入查核，建議補上對應的 PDF 連結 |
+| L308 | Tong〈Gauge Theory〉節號 | ✅ 2026-11-04 已以第 3 章 PDF 確認：3.1.1、3.2.2、3.3.1 正確，且第 3 章內文明寫 anomaly inflow「will be described in Section 4.4.1」。原稿正確 |
 | L145 | MPB 數值 | 加上「resolution = 32」，避免讀者誤以為那是收斂值 |
 | L85、L664 | Sakoda 書名缺出版資訊（附錄中） | 附錄與 L85 寫法統一：Springer, 2001 |
 | 全文 | 正文的引用格式（「作者, 期刊 卷, 頁 (年)」）與附錄（「作者（年）」）不一致 | 統一用編號引用 [1]、[2]…，附錄列完整條目，並附 DOI |
