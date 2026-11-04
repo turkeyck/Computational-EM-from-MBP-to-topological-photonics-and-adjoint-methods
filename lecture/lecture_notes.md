@@ -640,7 +640,7 @@ Fan & Joannopoulos（2002）分析的光子晶體平板是很好的基準（用 
 
 **驗收標準**：六項測試全數通過；光子晶體平板的共振頻率與 S4 相差 $<10^{-3}$（相對）。
 
-**閱讀**：Li, JOSA A 13, 1024 (1996)（S 矩陣與 R 矩陣演算法的比較）；Rumpf, PIER B 35, 241 (2011)；Liu & Fan, Comput. Phys. Commun. 183, 2233 (2012)（S4）；Fan & Joannopoulos, PRB 65, 235112 (2002)；Redheffer, J. Math. Phys. 41, 1 (1962)（星積）。
+**閱讀**：Li, JOSA A 13, 1024 (1996)（S 矩陣與 R 矩陣演算法的比較）；Rumpf, PIER B 35, 241 (2011)；Liu & Fan, Comput. Phys. Commun. 183, 2233 (2012)（S4）；Fan & Joannopoulos, PRB 65, 235112 (2002)；Redheffer, J. Math. and Phys.（MIT）41, 1 (1962)（星積）。
 
 ## 第 9 講：求解器軟體工程——C++ 核心、pybind11、測試與發佈
 
@@ -877,29 +877,29 @@ $\beta$ 要分階段提高（例如 8 → 16 → 32 → …），否則最佳化
 
 ## 參考文獻
 
-除特別註明外，以下書目與卷頁已於 2026-10-29 對照出版社、arXiv、作者或機構頁面查核（原稿的「查核來源」列於文末）。2026-11-04 修訂時新增的文獻以 † 標示，係依標準書目資料補入，尚未逐一以線上頁面複核。
+除特別註明外，以下書目與卷頁已於 2026-10-29 對照出版社、arXiv、作者或機構頁面查核（原稿的「查核來源」列於文末）。2026-11-04 修訂時新增的文獻以 † 標示，已於同日以 Crossref 書目資料庫逐筆複核卷、期、頁並附上 DOI。
 
 **教科書與講義**
 
 - J. D. Joannopoulos, S. G. Johnson, J. N. Winn, R. D. Meade,《Photonic Crystals: Molding the Flow of Light》第 2 版（Princeton University Press, 2008）
 - K. Sakoda,《Optical Properties of Photonic Crystals》（Springer, 2001）
-- † P. Yeh,《Optical Waves in Layered Media》（Wiley, 1988）
+- † P. Yeh,《Optical Waves in Layered Media》（Wiley, 1988；平裝版 2005）
 - A. Taflove & S. C. Hagness,《Computational Electrodynamics: The Finite-Difference Time-Domain Method》第 3 版（Artech House, 2005）
 - J. K. Asbóth, L. Oroszlány, A. Pályi,《A Short Course on Topological Insulators》（Lecture Notes in Physics 919, Springer, 2016；arXiv:1509.02295）
 - D. Tong,《Gauge Theory》講義，劍橋大學
 - K. Fujikawa & H. Suzuki,《Path Integrals and Quantum Anomalies》（Oxford University Press, 2004）
 
-**PWE 與因式分解**：Ho、Chan、Soukoulis, PRL 65, 3152 (1990)；Sözüer、Haus、Inguva, PRB 45, 13962 (1992)；Li, JOSA A 13, 1870 (1996)；Li, JOSA A 14, 2758 (1997)；Lalanne & Morris, JOSA A 13, 779 (1996)；Granet & Guizal, JOSA A 13, 1019 (1996)；Johnson & Joannopoulos, Opt. Express 8, 173 (2001)；Farjadpour 等人, Opt. Lett. 31, 2972 (2006)；† Popov & Nevière, JOSA A 17, 1773 (2000)；Schuster 等人, JOSA A 24, 2880 (2007)；† Götz 等人, Opt. Express 16, 17295 (2008)。
+**PWE 與因式分解**：Ho、Chan、Soukoulis, PRL 65, 3152 (1990)；Sözüer、Haus、Inguva, PRB 45, 13962 (1992)；Li, JOSA A 13, 1870 (1996)；Li, JOSA A 14, 2758 (1997)；Lalanne & Morris, JOSA A 13, 779 (1996)；Granet & Guizal, JOSA A 13, 1019 (1996)；Johnson & Joannopoulos, Opt. Express 8, 173 (2001)；Farjadpour 等人, Opt. Lett. 31, 2972 (2006)；† Popov & Nevière, JOSA A 17, 1773 (2000), doi:10.1364/JOSAA.17.001773；Schuster 等人, JOSA A 24, 2880 (2007)；† Götz 等人, Opt. Express 16, 17295 (2008), doi:10.1364/OE.16.017295。
 
-**拓撲光子學**：Fukui、Hatsugai、Suzuki, J. Phys. Soc. Jpn. 74, 1674 (2005)；Qi、Wu、Zhang, PRB 74, 085308 (2006)；Xiao、Chang、Niu, Rev. Mod. Phys. 82, 1959 (2010)；Haldane & Raghu, PRL 100, 013904 (2008)；Wang 等人, PRL 100, 013905 (2008)；Wang 等人, Nature 461, 772 (2009)；Lu、Joannopoulos、Soljačić, Nat. Photon. 8, 821 (2014)；Lu 等人, Science 349, 622 (2015)（光子 Weyl 點）；† Ma & Shvets, New J. Phys. 18, 025012 (2016)。
+**拓撲光子學**：Fukui、Hatsugai、Suzuki, J. Phys. Soc. Jpn. 74, 1674 (2005)；Qi、Wu、Zhang, PRB 74, 085308 (2006)；Xiao、Chang、Niu, Rev. Mod. Phys. 82, 1959 (2010)；Haldane & Raghu, PRL 100, 013904 (2008)；Wang 等人, PRL 100, 013905 (2008)；Wang 等人, Nature 461, 772 (2009)；Lu、Joannopoulos、Soljačić, Nat. Photon. 8, 821 (2014)；Lu 等人, Science 349, 622 (2015)（光子 Weyl 點）；† Ma & Shvets, New J. Phys. 18, 025012 (2016), doi:10.1088/1367-2630/18/2/025012。
 
-**量子異常**：† Nielsen & Ninomiya, Nucl. Phys. B 185, 20 (1981)；† Nucl. Phys. B 193, 173 (1981)；Nielsen & Ninomiya, Phys. Lett. B 130, 389 (1983)；Callan & Harvey, Nucl. Phys. B 250, 427 (1985)；Harvey, arXiv:hep-th/0509097。
+**量子異常**：† Nielsen & Ninomiya, Nucl. Phys. B 185, 20 (1981), doi:10.1016/0550-3213(81)90361-8；† Nucl. Phys. B 193, 173 (1981), doi:10.1016/0550-3213(81)90524-1；Nielsen & Ninomiya, Phys. Lett. B 130, 389 (1983)；Callan & Harvey, Nucl. Phys. B 250, 427 (1985)；Harvey, arXiv:hep-th/0509097。
 
-**RCWA 與 S 矩陣**：Moharam 等人, JOSA A 12, 1068 (1995)；Moharam 等人, JOSA A 12, 1077 (1995)；Li, JOSA A 13, 1024 (1996)；Rumpf, PIER B 35, 241 (2011)；Liu & Fan, Comput. Phys. Commun. 183, 2233 (2012)；Fan & Joannopoulos, PRB 65, 235112 (2002)；† Redheffer, J. Math. Phys. 41, 1 (1962)。
+**RCWA 與 S 矩陣**：Moharam 等人, JOSA A 12, 1068 (1995)；Moharam 等人, JOSA A 12, 1077 (1995)；Li, JOSA A 13, 1024 (1996)；Rumpf, PIER B 35, 241 (2011)；Liu & Fan, Comput. Phys. Commun. 183, 2233 (2012)；Fan & Joannopoulos, PRB 65, 235112 (2002)；† Redheffer, J. Math. and Phys.（MIT，今 Studies in Applied Mathematics）41, 1 (1962), doi:10.1002/sapm19624111。
 
-**FDTD 與 GPU**：Roden & Gedney, Microwave Opt. Technol. Lett. 27, 334 (2000)；Oskooi 等人, Comput. Phys. Commun. 181, 687 (2010)；† Mandelshtam & Taylor, J. Chem. Phys. 107, 6756 (1997)；† Williams、Waterman、Patterson, Commun. ACM 52(4), 65 (2009)；NVIDIA《CUDA C++ Best Practices Guide》。
+**FDTD 與 GPU**：Roden & Gedney, Microwave Opt. Technol. Lett. 27, 334 (2000)；Oskooi 等人, Comput. Phys. Commun. 181, 687 (2010)；† Mandelshtam & Taylor, J. Chem. Phys. 107, 6756 (1997), doi:10.1063/1.475324（勘誤：109, 4128 (1998)）；† Williams、Waterman、Patterson, Commun. ACM 52(4), 65 (2009), doi:10.1145/1498765.1498785；NVIDIA《CUDA C++ Best Practices Guide》。
 
-**逆向設計**：Molesky 等人, Nat. Photon. 12, 659 (2018)；Hughes 等人, ACS Photonics 5, 4781 (2018)；Sell 等人, Nano Lett. 17, 3752 (2017)；Kim & Lee, Comput. Phys. Commun. 282, 108552 (2023)；Jin 等人, ACS Photonics 7, 2350 (2020)；Hammond 等人, Opt. Express 30, 4467 (2022)；† Wang、Lazarov、Sigmund, Struct. Multidisc. Optim. 43, 767 (2011)；† Bourdin, Int. J. Numer. Methods Eng. 50, 2143 (2001)。
+**逆向設計**：Molesky 等人, Nat. Photon. 12, 659 (2018)；Hughes 等人, ACS Photonics 5, 4781 (2018)；Sell 等人, Nano Lett. 17, 3752 (2017)；Kim & Lee, Comput. Phys. Commun. 282, 108552 (2023)；Jin 等人, ACS Photonics 7, 2350 (2020)；Hammond 等人, Opt. Express 30, 4467 (2022)；† Wang、Lazarov、Sigmund, Struct. Multidisc. Optim. 43, 767 (2011), doi:10.1007/s00158-010-0602-y；† Bourdin, Int. J. Numer. Methods Eng. 50, 2143 (2001), doi:10.1002/nme.116。
 
 ### 查核來源（原稿）
 

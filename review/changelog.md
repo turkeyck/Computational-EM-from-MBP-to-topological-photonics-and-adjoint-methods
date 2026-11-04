@@ -205,6 +205,10 @@
 4. **Tong〈Gauge Theory〉第 3 章**（使用者提供的 PDF）：3.1.1〈Massless Fermions in Two Dimensions〉、3.2.2〈The Anomaly lies in the Measure〉（Fujikawa 方法）、3.3.1〈The Atiyah-Singer Index Theorem〉；第 3.3.4 節寫明「anomaly inflow that will be described in Section 4.4.1」。式 (3.8) $\dot\rho_A=eE/\pi$ 與式 (3.2) 的 $e^2/16\pi^2$ 都與講義的 (5.1)、(5.3) 一致。✅ 第 5 講閱讀指引已改寫為確認後的節名。
 5. **S4**（github.com/victorliu/S4，`doc/source/python_api.rst`、`S4/main_python.c`）：Python 選項為 `PolarizationDecomposition`、`PolarizationBasis`（`'Default'` 為切向場、`'Normal'`、`'Jones'`）、`LanczosSmoothing`、`SubpixelSmoothing`、`DiscretizedEpsilon`、`LatticeTruncation`（預設 `'Circular'`）；Lua API 為 `UsePolarizationDecomposition`、`UseNormalVectorBasis`、`UseJonesVectorBasis`。✅ 原稿「S4 的 PolarizationDecomposition 選項即此類方法」正確；第 7.3 節已寫回確切名稱並補上各向異性的限制，第 8.3 節陷阱表補上 S4 的截斷選項。
 
+6. **標 † 的新增文獻**（Crossref 書目資料庫，api.crossref.org）：Popov & Nevière、Götz 等人、Ma & Shvets、Nielsen & Ninomiya（1981 兩篇與 1983）、Mandelshtam & Taylor、Williams 等人、Wang–Lazarov–Sigmund、Bourdin 的卷、期、頁、年全部一致；Yeh 的書經 Open Library 確認為 1988 年版。✅ 已在參考文獻中附上 DOI。
+   - **修正**：Redheffer (1962) 刊登在 MIT 的 *Journal of Mathematics and Physics*（今 *Studies in Applied Mathematics*，doi:10.1002/sapm19624111），而不是 AIP 的 *J. Math. Phys.*。原寫法「J. Math. Phys.」容易誤認，已改為「J. Math. and Phys.（MIT）」。
+   - **補充**：Mandelshtam & Taylor (1997) 另有勘誤 J. Chem. Phys. 109, 4128 (1998)，已一併列出。
+
 ## 仍未能確認的事項
 
-- 標 † 的新增文獻卷頁（依標準書目資料補入，尚未逐一以線上頁面複核）。
+無。所有引用都已對照原始資料或書目資料庫複核。
