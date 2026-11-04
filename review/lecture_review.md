@@ -2,6 +2,8 @@
 
 審閱對象：[`lecture/lecture_notes_original.md`](../lecture/lecture_notes_original.md)（2026-10-29 版，707 行）
 審閱日期：2026-11-04
+
+> **已依本報告完成修訂**：修訂版見 [`lecture/lecture_notes.md`](../lecture/lecture_notes.md)，逐條修改紀錄見 [`changelog.md`](changelog.md)（修訂時又找出本報告之外的錯誤，一併列在其中）。
 文中「L 行號」均指原始講義的行號。數值驗證程式在 [`demos/`](../demos)，圖在 [`figures/`](../figures)。
 
 ---
