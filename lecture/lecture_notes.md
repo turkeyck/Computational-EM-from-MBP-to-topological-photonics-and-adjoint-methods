@@ -223,7 +223,7 @@ $$
 ### 習題
 
 1. 實作 1D 版本，與第 1 講的 Rytov 解析能帶比對，畫出相對誤差隨 $N$ 的變化。
-2. 實作 2D TM：方晶格介電柱 $\varepsilon=12$、$R=0.2a$（MPB 官方 Python 教學的範例）。MPB 教學在 resolution = 32 下輸出的 TM 能隙位於第 1、2 能帶之間，約從 0.2826 到 0.4193（$\omega a/2\pi c$），相對寬度約 39%。注意這是 resolution 32 的結果，還沒完全收斂；本 repo 的 PWE 收斂值為 0.2807–0.4172（39.1%，見下圖）。
+2. 實作 2D TM：方晶格介電柱 $\varepsilon=12$、$R=0.2a$（MPB 官方 Python 教學的範例）。MPB 教學在 resolution = 32 下輸出的 TM 能隙位於第 1、2 能帶之間，從 0.2826 到 0.4193（$\omega a/2\pi c$），相對寬度 38.95%；另有第 4、5 能帶之間 0.7157–0.7437（3.8%）的小能隙（2026-11-04 已對照教學頁面複核）。注意這是 resolution 32 的結果，還沒完全收斂；本 repo 的 PWE 收斂值為 0.2807–0.4172（39.1%，見下圖）。
 3. 實作 2D TE，分別用 Laurent 規則與逆規則，畫出某一能帶頻率對 $N$ 的收斂曲線（log–log），並估計兩者的收斂階數。
 4. 一維情形下，$\varepsilon$ 只隨 $x$ 變化。對 $H_z$ 形式的 PWE，$\eta$ 把 $D_y$ 映到 $E_y$。證明：因為 $E_y$ 是切向分量、在介面處連續，$[\![\varepsilon]\!]^{-1}$ 才是正確的截斷表示，而 $[\![1/\varepsilon]\!]$ 不是。再反過來說明：若被乘的是法向分量 $D_x$（連續），則 Laurent 規則 $[\![1/\varepsilon]\!]$ 才正確。
 
@@ -293,7 +293,7 @@ $$
 ### 習題
 
 1. 證明 $F_{12}$ 在 $u\to e^{i\phi}u$ 下不變，且 $\sum F_{12}/2\pi$ 為整數。
-2. 先在 Qi–Wu–Zhang（QWZ）兩能帶模型 $H(\mathbf k)=\sin k_x\,\sigma_x+\sin k_y\,\sigma_y+(m+\cos k_x+\cos k_y)\,\sigma_z$（$\sigma_i$ 為 Pauli 矩陣）上實作 FHS。畫出下能帶 Chern 數對 $m$ 的相圖：$|m|>2$ 時為 0，$0<|m|<2$ 時為 $\pm1$，且 $m$ 的正負兩側符號相反（整體符號取決於 $F_{12}$ 的定向慣例）。
+2. 先在 Qi–Wu–Zhang（QWZ）兩能帶模型 $H(\mathbf k)=\sin k_x\,\sigma_x+\sin k_y\,\sigma_y+(m+\cos k_x+\cos k_y)\,\sigma_z$（$\sigma_i$ 為 Pauli 矩陣）上實作 FHS。畫出下能帶 Chern 數對 $m$ 的相圖：$|m|>2$ 時為 0，$0<|m|<2$ 時為 $\pm1$，且 $m$ 的正負兩側符號相反。依 Asbóth 等人第 6 章的慣例，$0<m<2$ 時 $C=+1$、$-2<m<0$ 時 $C=-1$；整體符號取決於 $F_{12}$ 的定向慣例，本 repo 的 demo 與該書一致。
 3. 把 FHS 接到第 2 講的 PWE（TM，方晶格介電柱）。驗證每條孤立能帶都有 $C=0$，並畫出 $\Omega(\mathbf k)$ 確認 $\Omega(\mathbf k)=-\Omega(-\mathbf k)$。
 4. 把網格從 $6\times6$ 加到 $48\times48$，記錄 $C$ 何時穩定，並解釋為何 FHS 不需要 $\Omega$ 本身已收斂。
 

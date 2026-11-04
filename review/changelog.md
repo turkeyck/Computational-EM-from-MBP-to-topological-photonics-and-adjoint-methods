@@ -194,11 +194,18 @@
 | 引用 | 新增 10 筆文獻，以 † 標示「依標準書目資料補入、未經線上複核」 |
 | 引用 | grcwa 的查核連結改為 GitHub（README 已讀取確認） |
 
-## 尚未能確認的事項（需要能連網的環境再複核）
+## 線上複核（2026-11-04 補做）
 
-1. MPB 教學的數值 0.2826／0.4193（原稿已查核，本次無法再讀取頁面）。
-2. Wang 2008 的參數與能隙寬度（10% 與 6%）（同上）。
-3. Tong〈Gauge Theory〉的節號，特別是 anomaly inflow 的「4.4.1」。
-4. S4 中法向量場分解選項的確切名稱。
-5. Asbóth 書中 QWZ 模型 Chern 數的正負號慣例。
-6. 標 † 的新增文獻卷頁。
+最初用網頁擷取工具查核時，所有網站都在 DNS 解析階段失敗。之後改從 shell 經環境的 proxy 連線，以下三項已直接對照原始頁面確認：
+
+1. **MPB 教學**：`Gap from band 1 (0.282623311147724) to band 2 (0.419334798706834), 38.9514660888911%`，resolution = 32。✅ 與講義一致（修訂版另補上第 4–5 能帶的 3.8% 能隙）。
+2. **Wang 2008（arXiv:0712.1776）**：$\varepsilon=15$、$r=0.11a$；1600 Gauss、4.28 GHz 下 $\kappa=12.4$、$\mu=14$；第 2、3 TM 能帶在 M 點有二次型簡併；能隙 10%，計入色散後「reduces to around 6%」；氧化鋁柱 $r=0.106a$、$\varepsilon=10$、轉 45°，所有能帶 Chern 數為零。✅ 全部一致。
+3. **Asbóth 等人（arXiv:1509.02295）**：第 2 章 Berry phase, Chern number；第 6 章 Two-dimensional Chern insulators – the Qi-Wu-Zhang model；$0<u<2$ 時 $Q=1$、$-2<u<0$ 時 $Q=-1$。✅ 已把正負號寫進第 3 講習題 2。
+
+## 仍未能確認的事項
+
+`web.stanford.edu`（S4 文件）與 `www.damtp.cam.ac.uk`（Tong 講義）經 proxy 連線時 TLS 憑證驗證失敗，因此以下各項仍待複核：
+
+1. Tong〈Gauge Theory〉的節號，特別是 anomaly inflow 的「4.4.1」。
+2. S4 中法向量場分解選項的確切名稱。
+3. 標 † 的新增文獻卷頁。
