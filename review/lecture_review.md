@@ -54,7 +54,9 @@
 
 對沿 x 傳播的 (E\_z, H\_y)，由 ∇×E = −μ∂H/∂t 與 ∇×H = ε∂E/∂t 可得
 
-$$\frac{\partial H_y}{\partial t} = +\frac{1}{\mu}\frac{\partial E_z}{\partial x},\qquad \frac{\partial E_z}{\partial t} = +\frac{1}{\varepsilon}\frac{\partial H_y}{\partial x}$$
+```math
+\frac{\partial H_y}{\partial t} = +\frac{1}{\mu}\frac{\partial E_z}{\partial x},\qquad \frac{\partial E_z}{\partial t} = +\frac{1}{\varepsilon}\frac{\partial H_y}{\partial x}
+```
 
 兩條更新式都應該是 **「+」**，原文兩條都是「−」（那其實是 (E\_z, −H\_y) 或 (E\_y, H\_z) 的組合）。原文用「符號依取向而定，請自行確認」帶過，在講義中並不恰當。**建議**：直接給正確式子，刪掉那句免責說明，並附 Yee 網格示意圖（見 §6）。
 
