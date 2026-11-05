@@ -2,7 +2,7 @@
 
 Oct 29, 2026 · @jr lu（修訂版：2026-11-04）
 
-> **修訂說明**：本版修正了原稿的公式錯誤、慣例不一致與引用問題，補上術語定義、示意圖與可執行範例。逐條修改紀錄見 [`review/changelog.md`](../review/changelog.md)。數學式採 GitHub 建議的語法：行內為 ``$`…`$``，獨立式為 ` ```math ` 區塊。這種寫法不會被 Markdown 的跳脫與強調規則干擾，可在 GitHub 與 GitLab 正確算繪；其他編輯器若不支援，會顯示為程式碼。
+> **修訂說明**：本版修正了原稿的公式錯誤、慣例不一致與引用問題，補上術語定義、示意圖與可執行範例。逐條修改紀錄見 [`review/changelog.md`](../review/changelog.md)。數學式採 GitHub 建議的語法：行內為 ``$`…`$``，獨立式為 ` ```math ` 區塊。這種寫法不會被 Markdown 的跳脫與強調規則干擾，可在 GitHub 與 GitLab 正確算繪；其他編輯器若不支援，會顯示為程式碼；這時請改看已預先算繪數學式的 [`docs/lecture_notes.pdf`](../docs/lecture_notes.pdf) 或 [`docs/lecture_notes.html`](../docs/lecture_notes.html)，任何閱讀器都能開。
 
 ## 課程概述
 
